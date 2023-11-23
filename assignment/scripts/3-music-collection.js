@@ -4,11 +4,12 @@ console.log('***** Music Collection *****')
 let myCollection = [];
 
 function addToCollection(collection, title, artist, yearPublished) {
-  // your code here...
+  let album = { title, artist, yearPublished };
+  collection.push(album);
+  return album;
 }
 
-
-
+addToCollection(myCollection, 'Shaved Headers', 'Britney Spears', 2007);
 
 
 // PLEASE DO NOT MODIFY THIS. Just leave it down here at the bottom. Think of it
